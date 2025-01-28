@@ -54,4 +54,4 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries or feedback, please reach out to me at [misspriceless@gmail.com].
+For any inquiries or feedback, please reach out to me at [misspriceless45@gmail.com].
