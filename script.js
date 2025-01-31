@@ -22,3 +22,29 @@ function showSlides(n) {
     }
     slides[slideIndex].style.display = "block";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contact-form').onsubmit = function() {
+        let name = document.getElementById('name').value.trim();
+        let email = document.getElementById('email').value.trim();
+        let message = document.getElementById('message').value.trim();
+
+        if (name === "" || email === "" || message === "") {
+            alert('Please fill out all fields.');
+            return false;
+        }
+
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        alert('Form submitted successfully!');
+        return false; // Prevent actual form submission
+    };
+
+    function validateEmail(email) {
+        let re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});
